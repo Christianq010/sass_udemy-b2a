@@ -9,6 +9,12 @@
     color: #fff;
 }
 
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+}
+
 @mixin large-text {
     font: {
         size: 22px;
@@ -16,13 +22,13 @@
     }
 }
 
-@mixin rounded {
-    border-radius: 6px;
+@mixin rounded($radius) {
+    border-radius: $radius;
 }
 
-@mixin box {
-    @include rounded;
-    border: 1px solid #333;
+@mixin box($radius: 6px, $border: 1px solid #000) {
+    @include rounded($radius);
+    border: $border;
 }
 
 @mixin fancy-links {
