@@ -1,6 +1,9 @@
 // Partials
 @import "variables";
 
+// Mixins
+@import "mixins";
+
 /* 
 .
 . --- Main Element Styles ---- 
@@ -20,6 +23,10 @@ h4 {
     font-family: $headline-font;
 }
 
+h2 {
+    @include large-text;
+}
+
 p {
     font-family: $text-font;
 }
@@ -28,7 +35,13 @@ a {
     color: $link-color;
 }
 
+.warning-btn {
+    @include warning;
+    padding: 8px 12px;
+}
+
 #header {
+    @include box;
     height: $header-height;
     background-color: $theme-color;
     
