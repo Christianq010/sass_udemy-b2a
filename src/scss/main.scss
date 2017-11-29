@@ -1,3 +1,5 @@
+// Custom Functions
+@import "partials/functions";
 // Partials
 @import "partials/variables";
 // Mixins
@@ -5,7 +7,7 @@
 // Fonts - (Uses our mixin google fonts)
 @include google-font("Alegreya+Sans");
 @include google-font("Titllium+Web");
-// styling for a links
+// Styling for a links
 @include fancy-links;
 
 /* 
@@ -22,6 +24,7 @@ body {
     @include large-screens {
         font-size: 125%;
     }
+    font-size: em(18px);
 }
 
 h1,
@@ -84,11 +87,26 @@ a {
         max-width: $content-width;
     }
     margin: 0 auto 0 auto;
-    #content {}
-    #sidebar {}
+    #content {
+        float: left;
+        width: 6 * $col;
+    }
+    #sidebar {
+        float: right;
+        width: 2 * $col;
+        li {
+            list-style-type: none;
+            padding: em(16px) em(20px);
+            border-bottom: 1px dashed #999;
+            &:hover {
+                background-color: #efefef;
+            }
+        }
+    }
 }
 
 #footer {
+    clear: both;
     height: $footer-height;
     background-color: $ternary-color;
 }
