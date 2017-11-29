@@ -1,51 +1,21 @@
-# Template Starter Pack
-A light package for compiling Sass and running a dev server and managing bower dependencies from free HTML5 on the web.
+# Udemy - Complete SASS & SCSS Course
+This is the repo for the project created for following the lessons in the [Udemy Course](https://www.udemy.com/sasscourse/learn/v4/overview).
 
 ## Usage
-> This project is a basic template for turning HTML5 templates on the web into projects I can edit with SASS and js dependencies handled via bower.
+> This project is for documenting the things learnt during the course.
 
-> Also contains a few points on bower and npm as a refresher for me when initilizing a Front End project.
-
-
-### Version
-1.0.0
 
 ## Installation
+Gulp - SASS, browsersync were set up in this [repo](https://github.com/Christianq010/sass_starter_pack) and cloned as a starter template to begin this project.
 
-### NPM
-* To start a package.json use `npm init`
-* Install packages by using `npm install gulp-sass gulp browersync` etc.
-* Install the dependencies after cloning this project (gulp, gulp-sass, browser-sync)
 
-```sh
-$ npm install
-```
+### SASS
+* The commit history gives each lesson covered and the content added.
 
-### Bower
-* Initialize bower with `bower init`
-* Install a bower package and update `.json` with `bower install bootstrap -S`
-* Install any github url with `bower install url`
-* [Bower installer] (https://github.com/rquadling/bower-installer) provides an easy way for the main files to be installed or moved to one or more locations. Simply add to your `bower.json` an install key and path attribute:
+### The SASS Shell
+* To the run the sass shell in the terminal - `sass -i` or `sass --interactive`
 
-```
-{
-    "name": "test",
-    "version": "0.1",
-    "dependencies": {
-        "backbone": "latest"
-    },
-    "install": {
-        "path": "some/path",
-        "sources": {
-            "requirejs": "bower_components/requirejs/require.js"
-        }
-    }
-}
-```
-
-### Run Server
-This will watch your sass files, compile them and run your dev server at http://localhost:3000
-
-```sh
-$ npm start
+```css
+>> 3px + 3px
+6px
 ```
