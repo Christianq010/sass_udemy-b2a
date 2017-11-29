@@ -4,6 +4,12 @@
 .
 */
 
+// Our google font
+@mixin google-font($font) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
 @mixin warning {
     background-color: orange;
     color: #fff;
@@ -37,5 +43,3 @@
         text-decoration: none;
     }
 }
-
-@include fancy-links;

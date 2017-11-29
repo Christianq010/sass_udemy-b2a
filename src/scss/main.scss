@@ -4,6 +4,14 @@
 // Mixins
 @import "partials/mixins";
 
+// Fonts - (Uses our mixin google fonts)
+@include google-font("Alegreya+Sans");
+@include google-font("Titllium+Web");
+
+// styling for a links
+@include fancy-links;
+
+
 /* 
 .
 . --- Main Element Styles ---- 
