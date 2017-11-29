@@ -6,28 +6,28 @@
 
 // Media Queries for screens
 @mixin tiny-screens() {
-    @media only screen and (max-width: 320px){
-        @content;   
+    @media only screen and (max-width: 320px) {
+        @content;
     }
-} 
+}
 
 @mixin smaller-screens() {
-    @media only screen and (max-width: 480px){
-        @content;   
+    @media only screen and (max-width: 480px) {
+        @content;
     }
-} 
+}
 
 @mixin medium-screens() {
-    @media only screen and (max-width: 680px){
-        @content;   
+    @media only screen and (max-width: 680px) {
+        @content;
     }
-} 
+}
 
 @mixin large-screens() {
-    @media only screen and (max-width: 960px){
-        @content;   
+    @media only screen and (max-width: 960px) {
+        @content;
     }
-} 
+}
 
 // Our google font
 @mixin google-font($font) {
@@ -38,6 +38,9 @@
 @mixin warning {
     background-color: orange;
     color: #fff;
+    &:hover {
+        background-color: lighten(orange, 10%);
+    }
 }
 
 @mixin box-shadow($shadow...) {
