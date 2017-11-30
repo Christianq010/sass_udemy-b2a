@@ -32,6 +32,13 @@ body {
     body {
       font-size: 125%; } }
 
+.error, .critical-error, .cta-btn, .super-cta-btn {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
 h1,
 h2,
 h3,
@@ -50,12 +57,19 @@ a {
   a:hover {
     color: #ca510d; }
 
-.warning-btn {
+.warning-btn, .cta-btn, .super-cta-btn {
   background-color: orange;
   color: #fff;
   padding: 8px 12px; }
-  .warning-btn:hover {
+  .warning-btn:hover, .cta-btn:hover, .super-cta-btn:hover {
     background-color: #ffb733; }
+
+.cta-btn, .super-cta-btn {
+  border-radius: 6px;
+  font-weight: bold; }
+
+.super-cta-btn {
+  font-size: 1.25em; }
 
 #header {
   border-radius: 6px;

@@ -27,6 +27,17 @@ body {
     font-size: em(18px);
 }
 
+.error {
+    color: red;
+}
+
+// inherit from our error class
+.critical-error {
+    @extend .error;
+    bottom: 1px solid red;
+    font-weight: bold;
+}
+
 h1,
 h2,
 h3,
@@ -53,6 +64,19 @@ a {
 .warning-btn {
     @include warning;
     padding: 8px 12px;
+}
+
+.cta-btn {
+    @extend .warning-btn;
+    @extend .error;
+    @include rounded;
+    font-weight: bold;
+}
+
+// Inherit from an already inherited class
+.super-cta-btn {
+    @extend .cta-btn;
+    font-size: em(20px);
 }
 
 #header {

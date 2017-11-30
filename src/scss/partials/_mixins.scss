@@ -56,7 +56,7 @@
     }
 }
 
-@mixin rounded($radius) {
+@mixin rounded($radius: 6px) {
     border-radius: $radius;
 }
 
