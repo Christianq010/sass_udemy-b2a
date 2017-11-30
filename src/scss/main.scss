@@ -61,6 +61,18 @@ a {
     }
 }
 
+// Inheritance scss marker
+%highlight {
+    font-style: italic;
+}
+
+.sub-title {
+    @extend %highlight;
+    // check if it exists , if not ignore
+    @extend .foo !optional;
+    font-size: em(20px);
+}
+
 .warning-btn {
     @include warning;
     padding: 8px 12px;
