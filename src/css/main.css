@@ -51,6 +51,18 @@ a {
 .andra-smith-profile {
   background-image: url("/img/andra-smith.png"); }
 
+.tiny {
+  font-size: 8px; }
+
+.small {
+  font-size: 12px; }
+
+.medium {
+  font-size: 16px; }
+
+.large {
+  font-size: 20px; }
+
 /* 
 .
 . --- Main Element Styles ---- 

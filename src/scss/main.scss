@@ -26,6 +26,18 @@ andra-smith;
     }
 }
 
+// Using a @for loop for maps and its respective data
+$font-sizes: (tiny: 8px,
+small: 12px,
+medium: 16px,
+large: 20px);
+@each $name,
+$size in $font-sizes {
+    .#{$name} {
+        font-size: $size;
+    }
+}
+
 
 /* 
 .
