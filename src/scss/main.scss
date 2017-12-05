@@ -16,10 +16,11 @@
 .
 */
 
-// 
 body {
     font-family: $text-font;
     color: $text-color;
+    font-size: em(16px);
+    background-color: $body-background-color;
     // increase font size on screns <960px
     @include large-screens {
         font-size: 125%;
@@ -61,7 +62,7 @@ a {
     }
 }
 
-// Inheritance scss marker
+// extend-only Inheritance scss class
 %highlight {
     font-style: italic;
 }
