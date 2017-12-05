@@ -9,6 +9,13 @@
 @include google-font("Titllium+Web");
 // Styling for a links
 @include fancy-links;
+// Use for loop to generate col-width
+@for $i from 1 through 6 {
+    .col-#{$i} {
+        width: $i * 2em;
+    }
+}
+
 
 /* 
 .
