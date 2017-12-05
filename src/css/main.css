@@ -42,6 +42,15 @@ a {
 .col-6 {
   width: 12em; }
 
+.bob-banker-profile {
+  background-image: url("/img/bob-banker.png"); }
+
+.patty-plume-profile {
+  background-image: url("/img/patty-plume.png"); }
+
+.andra-smith-profile {
+  background-image: url("/img/andra-smith.png"); }
+
 /* 
 .
 . --- Main Element Styles ---- 

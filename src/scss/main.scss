@@ -16,6 +16,16 @@
     }
 }
 
+// Using a for @each loop to loop over items
+$speakers: bob-banker,
+patty-plume,
+andra-smith;
+@each $speaker in $speakers {
+    .#{$speaker}-profile {
+        background-image: url('/img/#{$speaker}.png');
+    }
+}
+
 
 /* 
 .
@@ -104,7 +114,8 @@ a {
 
 #header {
     @include box($border: 1.5px solid #999);
-    @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
+    @include box-shadow(2px 0px 4px #999,
+    1px 1px 6px $secondary-color);
     height: $header-height;
     background-color: $theme-color;
     #main-menu {
