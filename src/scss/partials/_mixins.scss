@@ -4,6 +4,25 @@
 .
 */
 
+// Style differences for each client
+@mixin blue-beans {
+    @if $brand==blue-beans {
+        @content;
+    }
+}
+
+@mixin roger-rovers {
+    @if $brand==roger-rovers {
+        @content;
+    }
+}
+
+@mixin pastry-pizza {
+    @if $brand==pastry-pizza {
+        @content;
+    }
+}
+
 // Media Queries for screens
 @mixin tiny-screens() {
     @media only screen and (max-width: 320px) {
