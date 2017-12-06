@@ -24,3 +24,14 @@ Gulp - SASS, browsersync were set up in this [repo](https://github.com/Christian
 >> #333 + #777
 #aaaaaa
 ```
+
+### SASS Frameworks
+* [Susy](http://oddbird.net/susy/)
+* [Breakpoint](http://breakpoint-sass.com/)
+* [Compass](http://compass-style.org/)
+
+#### Installations
+* Install susy with `sudo gem install susy`
+* Install breakpoint with `sudo gem install breakpoint`
+* Install compass with `sudo gem install compass`
+* List all gems installed with `gem list`
